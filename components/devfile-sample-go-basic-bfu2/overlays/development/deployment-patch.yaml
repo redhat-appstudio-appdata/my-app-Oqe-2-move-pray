@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-go-basic-bfu2
+  namespace: cbanavik-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:f3ea9b777a61e108425b24e030ae0d76c8617e0c0680ab0b3426ff837a514ae3
+        name: my-go
+        resources: {}
+status: {}
